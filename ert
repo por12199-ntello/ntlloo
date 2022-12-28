@@ -1,0 +1,10 @@
+AD-CLIENT-ID		Cliente de acceso para AD	948a5c17-b218-4bf3-a117-03bbd164eb5a
+AD-TENANT-ID		ID del Tenant al cual debe conectar con el AD	cd403a65-991b-4445-ab10-3960197144c1
+AD-HOST		Host de consulta api graph	graph.microsoft.com
+LOGIN-MICROSOFT		Login de microsoft	https://login.microsoftonline.com
+AD-GRAPH		URL de acceso al api graph	https://graph.microsoft.com/
+HOST-GRAPH		Alcance de acceso al AD	https://graph.microsoft.com/default
+CLIENT-SECRET		Cliente secret de acceso al portal	2db7Q~8yC29sOoauzc8mQtYIWd4YHcVrUPXPW
+SCOPE		Acceso al Scope construido en el portal a nivel de directorio activo	AutorizacionAPPMobilePT
+USUARIO-DA		Usuario para obtener token de DA	PENDIENTE DE ASIGNAR POR SEGURIDAD
+CONTRASENA-DA		Contraseña para obtener token de DA	PENDIENTE DE ASIGNAR POR SEGURIDAD
