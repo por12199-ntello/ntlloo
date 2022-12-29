@@ -1,0 +1,48 @@
+Actividades	Transaccion	Responsable	Horas	Apoyo	fecha inicio	fecha fin
+Generacion de request (fechas inicio y fin)	Debito automatico	Brian Sanchez	?		2/01/2023	?
+Generacion version tiendas	Debito Automatico	Lizeth Del Rio	2		9/02/2023	9/02/2023
+Pruebas de pre-produccion	Debito Automatico	jeferson	16		6/02/2023	7/02/2023
+Pruebas QA Android	Debito Automatico	Yeison/patricia	40		30/01/2023	3/02/2023
+Pruebas QA iOS	Debito Automatico	jeferson	16		30/01/2023	1/02/2023
+Envio de version a tiendas	Formulario	Lizeth Del Rio	1		30/01/2023	31/01/2023
+Generar version pre-produccion (Tester)	Creación de Usuarios	Lizeth Del Rio	2		27/01/2023	27/01/2023
+Pruebas de pre-produccion	Creación de Usuarios	jeferson	16		26/01/2023	27/01/2023
+Pruebas de pre-produccion	Formulario	jeferson	16		26/01/2023	27/01/2023
+Generacion version pruebas	Debito Automatico	Lizeth Del Rio	2		25/01/2023	25/01/2023
+Generar version pre-produccion	Formulario	Lizeth Del Rio	2		25/01/2023	25/01/2023
+Pruebas QA (Validacion, verificacion otp, generación otp y contraseña)	Creación de Usuarios	Yeison/patricia	56		16/01/2023	25/01/2023
+Pruebas QA Android	Creación de Usuarios	Yeison/patricia	56		16/01/2023	25/01/2023
+Integracion front debito automatico	Debito automatico	Lizeth Del Rio	40		17/01/2023	24/01/2023
+Pruebas QA Android	Formulario	Yeison/patricia/Brian/Aleja	48		16/01/2023	23/01/2023
+Pruebas QA iOS	Creación de Usuarios	jeferson	16		16/01/2023	18/01/2023
+Pruebas QA iOS	Formulario	jeferson	16		16/01/2023	18/01/2023
+Integracion front inscripcion de cuentas	inscripcion de cuentas	Steven Espinosa	24	Lizeth Del Rio	13/01/2023	17/01/2023
+Generacion version pruebas	Creación de Usuarios	Lizeth Del Rio	2		16/01/2023	16/01/2023
+Despliegue API MANAGEMENT	Debito automatico	Brandon Martinez	4		16/01/2023	16/01/2023
+Envio de version a tiendas (Distribucion, retiros, plan empresarial)	retiros	Lizeth Del Rio	1		13/01/2023	14/01/2023
+Pruebas de pre-produccion	Retiros	jeferson ramos	8		12/01/2023	13/01/2023
+Tester con usuarios (data)	Creación de Usuarios	Yeison/patricia/jeferson	40		10/01/2023	13/01/2023
+Integracion front creacion de usuario	Creación de Usuarios	Brandon Martinez	48	Lizeth Del Rio	5/01/2023	13/01/2023
+Generacion version pruebas	Formulario	Lizeth Del Rio	2		13/01/2023	13/01/2023
+Generar version retiros	retiros	Lizeth Del Rio	5		12/01/2023	12/01/2023
+Integracion front formulario	Formulario	Steven Espinosa	32	Lizeth Del Rio	10/01/2023	12/01/2023
+Pruebas tecnicas y calidad	Formulario	Fredy Cristancho	4		11/01/2023	11/01/2023
+Pruebas de pre-produccion	Distribución de Aportes	jeferson ramos	16		10/01/2023	11/01/2023
+Pado a produccion BFF	Distribución de Aportes	Brandon Martinez	3		4/01/2023	11/01/2023
+Solucionar incidente pregunta retencion capital	retiros	Lizeth Del Rio	40	Yoana	3/01/2023	11/01/2023
+Documentacion BFF (postman)	Formulario	Fredy Cristancho	16		6/01/2023	10/01/2023
+Maquetacion formulario	Formulario	Steven Espinosa	24	Lizeth Del Rio	4/01/2023	6/01/2023
+Finalización pruebas QA Android	Distribución de Aportes	Patricia Villamizar	24		4/01/2023	6/01/2023
+Despliegue ambientes BFF	Formulario	Fredy Cristancho	16		4/01/2023	5/01/2023
+Finalización pruebas QA iOs	Distribución de Aportes	jeferson ramos	16	Yuli Damelines	4/01/2023	5/01/2023
+Despliegue ambientes	Creación de Usuarios	Brandon Martinez	4		4/01/2023	4/01/2023
+Documentacion BFF (postman)	inscripcion de cuentas	David Sandoval	4		4/01/2023	4/01/2023
+Capacitacion ingeniero front	retiros	Lizeth Del Rio	10	Steven	2/01/2023	3/01/2023
+Resolver conflicto PROSPECTOS	Distribución de Aportes	Brandon Martinez	16	yoana	2/01/2023	3/01/2023
+Pruebas unitarias BFF	Formulario	Fredy Cristancho	16		2/01/2023	3/01/2023
+Despliegue ambientes BFF	inscripcion de cuentas	David Sandoval	16		2/01/2023	3/01/2023
+Pruebas de pre-produccion	nombre plan empresarial	jeferson ramos	16	Daniela Buenahora	2/01/2023	3/01/2023
+Generar version sin retiros	retiros	Lizeth Del Rio	5		29/12/2022	29/12/2022
+Revision coincidencia entre versiones Front y BFF	nombre plan empresarial	Lizeth Del Rio	6	Nicolás	29/12/2022	29/12/2022
+Pruebas unitarias BFF	Creación de Usuarios	Brandon Martinez	8		29/12/2022	29/12/2022
+Pruebas unitarias BFF 	inscripcion de cuentas	David Sandoval	8		29/12/2022	29/12/2022
