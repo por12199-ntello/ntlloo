@@ -1,0 +1,667 @@
+{
+	"info": {
+		"_postman_id": "bf61e560-db61-4f86-a0cc-597b21cfbda0",
+		"name": "CCM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18567464"
+	},
+	"item": [
+		{
+			"name": "deliveryValidation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "canal",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "ipaddr",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "idrequest",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "idusuario",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "fecha",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"deliveryId\": \"6380c4df70445700090fab30\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ptmobile.afpporvenir.com/ccm/bff/v1/ccm/deliveryValidation",
+					"protocol": "https",
+					"host": [
+						"ptmobile",
+						"afpporvenir",
+						"com"
+					],
+					"path": [
+						"ccm",
+						"bff",
+						"v1",
+						"ccm",
+						"deliveryValidation"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "deliveryValidation",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "canal",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "ipaddr",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "idrequest",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "idusuario",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "fecha",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"deliveryId\": \"6287a8903e33d800096677ff\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ptmobile.afpporvenir.com/ccm/bff/v1/ccm/deliveryValidation",
+							"protocol": "https",
+							"host": [
+								"ptmobile",
+								"afpporvenir",
+								"com"
+							],
+							"path": [
+								"ccm",
+								"bff",
+								"v1",
+								"ccm",
+								"deliveryValidation"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 20 May 2022 14:24:09 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": null,\n    \"cardId\": \"613f5e280198880008cd3299\",\n    \"communicationsId\": null,\n    \"deliveryState\": \"DELIVERED\",\n    \"deliveryFolderState\": \"SENT\",\n    \"sendingRequestUser\": \"actualizacionEstados\",\n    \"failureId\": null,\n    \"creationDate\": \"2022/05/20-14:20:40\",\n    \"modificacionDate\": null,\n    \"message\": null,\n    \"messages\": [\n        {\n            \"id\": \"6287a3b92caf38000942f7c8\",\n            \"deliveryId\": \"6287a3b83e33d800096677d3\",\n            \"messageType\": \"EMAIL\",\n            \"cardId\": \"613f5e280198880008cd3299\",\n            \"cardName\": \"DCE - Retiro PI APP\",\n            \"communicationId\": \"52cdbc77-a0a1-4b22-aa4f-91b5db157a6f\",\n            \"communicationName\": \"DCE - Retiro PI APP Porvenir\",\n            \"messageState\": \"SENT\",\n            \"messageFolderState\": \"FINISHED\",\n            \"failureId\": null,\n            \"missingProperties\": [],\n            \"trunkId\": \"masivian-email\",\n            \"trackingId\": \"6287a3b938490661aa123887\",\n            \"creationDate\": \"2022/05/20-14:20:41\",\n            \"modificationDate\": \"2022/05/20-14:24:03\",\n            \"sendDate\": \"2022/05/20-14:20:41\",\n            \"deliveryCustomerId\": null,\n            \"customerId\": \"98561336\",\n            \"customerDataId\": \"98561336\",\n            \"customerTypeId\": \"CC\",\n            \"customerType\": \"AFILIADO\",\n            \"customerDataSource\": \"CRM\",\n            \"customerTarget\": null,\n            \"segment\": null,\n            \"segmentationGroup\": null,\n            \"sendingRequestUser\": \"actualizacionEstados\",\n            \"smsGetResponseCode\": null,\n            \"courierReferenceCode\": null,\n            \"emailLatestEvent\": {\n                \"date\": \"2022/05/20-14:20:50\",\n                \"status\": null,\n                \"eventId\": \"16516138964\",\n                \"eventType\": \"EmailDelivered\"\n            },\n            \"cmemailEvents\": [\n                {\n                    \"date\": \"2022/05/20-14:20:41\",\n                    \"status\": null,\n                    \"eventId\": \"16515872233\",\n                    \"eventType\": \"EmailSent\"\n                },\n                {\n                    \"date\": \"2022/05/20-14:20:50\",\n                    \"status\": null,\n                    \"eventId\": \"16516138964\",\n                    \"eventType\": \"EmailDelivered\"\n                },\n                {\n                    \"date\": \"2022/05/20-14:20:41\",\n                    \"status\": null,\n                    \"eventId\": \"16515452278\",\n                    \"eventType\": \"EmailCreated\"\n                },\n                {\n                    \"date\": \"2022/05/20-14:20:41\",\n                    \"status\": null,\n                    \"eventId\": \"16515457786\",\n                    \"eventType\": \"DeliveryCreated\"\n                }\n            ]\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Delivery",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "canal",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "ipaddr",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "idrequest",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "idusuario",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "fecha",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cardId\": \"613f5e280198880008cd3299\",\r\n    \"customers\": [\r\n        {\r\n            \"id\": \"98561336\",\r\n            \"typeId\": \"CC\",\r\n            \"data\": {\r\n                \"Nombres\": \"SOBERON GALLEGO JORGE ALEJANDRO\",\r\n                \"fechasolicitud\": \"{{$timestamp}}\",\r\n                \"IPafiliado\": \"10.34.2.99\"\r\n            }\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ptmobile.afpporvenir.com/ccm/bff/v1/ccm/delivery",
+					"protocol": "https",
+					"host": [
+						"ptmobile",
+						"afpporvenir",
+						"com"
+					],
+					"path": [
+						"ccm",
+						"bff",
+						"v1",
+						"ccm",
+						"delivery"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Cambio de clave",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "canal",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "ipaddr",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "idrequest",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "idusuario",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "fecha",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cardId\": \"613f60170198880008cd329f\",\r\n    \"customers\": [\r\n        {\r\n            \"id\": \"98561336\",\r\n            \"typeId\": \"CC\",\r\n            \"data\": {\r\n                \"Nombres\": \"SOBERON GALLEGO JORGE ALEJANDRO\",\r\n                \"IPafiliado\": \"10.34.2.99\"\r\n            }\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ptmobile.afpporvenir.com/ccm/bff/v1/ccm/delivery",
+							"protocol": "https",
+							"host": [
+								"ptmobile",
+								"afpporvenir",
+								"com"
+							],
+							"path": [
+								"ccm",
+								"bff",
+								"v1",
+								"ccm",
+								"delivery"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 19 May 2022 21:38:15 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Solicitud de envío aceptada\",\n    \"deliveryId\": \"6286b8c7c515f0000aea7ee7\",\n    \"fileAnalisysId\": null,\n    \"deliveryKind\": \"DELIVERY_FORM\",\n    \"incompleteCustomerData\": \"false\",\n    \"customersNotFound\": \"false\",\n    \"clientCheckResults\": [\n        {\n            \"id\": \"98561336\",\n            \"idType\": \"CC\",\n            \"result\": \"OK\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "Enrolamiento",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "canal",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "ipaddr",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "idrequest",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "idusuario",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "fecha",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cardId\": \"613f61d00198880008cd32a5\",\r\n    \"customers\": [\r\n        {\r\n            \"id\": \"# de cedula\",\r\n            \"typeId\": \"CC\",\r\n            \"data\": {\r\n                \"Nombres\": \"Nombre completo\",\r\n                \"fechasolicitud\": \"{{$timestamp}}\",\r\n                \"IPafiliado\": \"0.0.0.0\"\r\n            }\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ptmobile.afpporvenir.com/ccm/bff/v1/ccm/delivery",
+							"protocol": "https",
+							"host": [
+								"ptmobile",
+								"afpporvenir",
+								"com"
+							],
+							"path": [
+								"ccm",
+								"bff",
+								"v1",
+								"ccm",
+								"delivery"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 19 May 2022 21:39:38 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Solicitud de envío aceptada\",\n    \"deliveryId\": \"6286b91ac515f0000aea7ee9\",\n    \"fileAnalisysId\": null,\n    \"deliveryKind\": \"DELIVERY_FORM\",\n    \"incompleteCustomerData\": \"false\",\n    \"customersNotFound\": \"false\",\n    \"clientCheckResults\": [\n        {\n            \"id\": \"98561336\",\n            \"idType\": \"CC\",\n            \"result\": \"OK\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "DCE - Retiro PI - OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "canal",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "ipaddr",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "idrequest",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "idusuario",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "fecha",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cardId\": \"613f5e280198880008cd3299\",\r\n    \"customers\": [\r\n        {\r\n            \"id\": \"# de cedula\",\r\n            \"typeId\": \"CC\",\r\n            \"data\": {\r\n                \"Nombres\": \"Nombre completo\",\r\n                \"fechasolicitud\": \"{{$timestamp}}\",\r\n                \"IPafiliado\": \"0.0.0.0\"\r\n            }\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ptmobile.afpporvenir.com/ccm/bff/v1/ccm/delivery",
+							"protocol": "https",
+							"host": [
+								"ptmobile",
+								"afpporvenir",
+								"com"
+							],
+							"path": [
+								"ccm",
+								"bff",
+								"v1",
+								"ccm",
+								"delivery"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 19 May 2022 21:40:52 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Solicitud de envío aceptada\",\n    \"deliveryId\": \"6286b964c515f0000aea7eeb\",\n    \"fileAnalisysId\": null,\n    \"deliveryKind\": \"DELIVERY_FORM\",\n    \"incompleteCustomerData\": \"false\",\n    \"customersNotFound\": \"false\",\n    \"clientCheckResults\": [\n        {\n            \"id\": \"98561336\",\n            \"idType\": \"CC\",\n            \"result\": \"OK\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "Recomposicion de saldos",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "canal",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "ipaddr",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "idrequest",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "idusuario",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "fecha",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cardId\": \"610b0e66995f340ae4b04e15\",\r\n    \"customers\": [\r\n        {\r\n            \"id\": \"# de cedula\",\r\n            \"typeId\": \"CC\",\r\n            \"data\": {\r\n                \"nombres\": \"\",\r\n                \"apellidos\": \"\",\r\n                \"email\": \"\",\r\n                \"DATO1\": \"Nombre Completo\",\r\n                \"DATO2\": \"canal - App Mobile\",\r\n                \"DATO3\": \"IP addr\",\r\n                \"DATO4\": \"fecha\"\r\n            }\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ptmobile.afpporvenir.com/ccm/bff/v1/ccm/delivery",
+							"protocol": "https",
+							"host": [
+								"ptmobile",
+								"afpporvenir",
+								"com"
+							],
+							"path": [
+								"ccm",
+								"bff",
+								"v1",
+								"ccm",
+								"delivery"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 25 Nov 2022 13:27:16 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Solicitud de envío aceptada\",\n    \"deliveryId\": \"6380c2b470445700090faaf1\",\n    \"fileAnalisysId\": null,\n    \"deliveryKind\": \"DELIVERY_FORM\",\n    \"incompleteCustomerData\": \"false\",\n    \"customersNotFound\": \"false\",\n    \"clientCheckResults\": [\n        {\n            \"id\": \"1020778474\",\n            \"idType\": \"CC\",\n            \"result\": \"OK\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "Distribucion de aportes",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "canal",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "ipaddr",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "idrequest",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "idusuario",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "fecha",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cardId\": \"610b2793995f340ae4b04e20\",\r\n    \"customers\": [\r\n        {\r\n            \"id\": \"# de cedula\",\r\n            \"typeId\": \"CC\",\r\n            \"data\": {\r\n                \"DATO1\": \"Nombre completo\",\r\n                \"DATO2\": \"canal - App Mobile\",\r\n                \"DATO3\": \"IP addr\",\r\n                \"DATO4\": \"fecha\"\r\n            }\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ptmobile.afpporvenir.com/ccm/bff/v1/ccm/delivery",
+							"protocol": "https",
+							"host": [
+								"ptmobile",
+								"afpporvenir",
+								"com"
+							],
+							"path": [
+								"ccm",
+								"bff",
+								"v1",
+								"ccm",
+								"delivery"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 25 Nov 2022 13:30:22 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Solicitud de envío aceptada\",\n    \"deliveryId\": \"6380c36d70445700090fab20\",\n    \"fileAnalisysId\": null,\n    \"deliveryKind\": \"DELIVERY_FORM\",\n    \"incompleteCustomerData\": \"false\",\n    \"customersNotFound\": \"false\",\n    \"clientCheckResults\": [\n        {\n            \"id\": \"98561336\",\n            \"idType\": \"CC\",\n            \"result\": \"OK\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
