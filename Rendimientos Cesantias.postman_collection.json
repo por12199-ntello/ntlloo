@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "ca752db7-72fd-482e-a7f4-4c46c3137659",
+		"name": "Rendimientos Cesantias",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18567464"
+	},
+	"item": [
+		{
+			"name": "rendimientos cesantias",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "canal",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "ipaddr",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "idrequest",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "idusuario",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "fecha",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fecha\": \"YYYYMMDD\",\r\n    \"numeroCuenta\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ptmobile.afpporvenir.com/rendimientoCes/bff/v1/rendimientoCes/detalleSaldosCes?tipoIdentificacion",
+					"protocol": "https",
+					"host": [
+						"ptmobile",
+						"afpporvenir",
+						"com"
+					],
+					"path": [
+						"rendimientoCes",
+						"bff",
+						"v1",
+						"rendimientoCes",
+						"detalleSaldosCes"
+					],
+					"query": [
+						{
+							"key": "tipoIdentificacion",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "canal",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "idrequest",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "idusuario",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "fecha",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "ipaddr",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroCuenta\": \"oqYET/FRSoruqHVdHYGD6DlzVAFUO7eFaDfxhUOY1wtVPR/1JZDeee43El1rIvbR5e1e0Ftcd3i1xb2ZPhiiV3jZuKeo6VixLQwfPXEa2wW4dQU2QZAAMLVmrMlc0/ov035lyyMxPkezxeJW2INyTPnk+d+Wd19wC+2O+DNev1q8HO2bbBxtyNw0NIGl+pKIteFog+8EwzWx2Q6bwTiatnNtKdIfcmUmEsLYrNka9HarYxxumI5Jo+dBOJ6jjl6HguLF5GKY5vTwNhjjmDncW3I/Z/BUTGW41194MrPH3QABhBK6POO9lvYWIIKZH6kTbainmSfsB8nc+98DYhClTw==\",\r\n    \"fecha\": \"20210808\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://52.188.72.26/bff/v1/rendimientoCes/detalleSaldosCes",
+							"protocol": "http",
+							"host": [
+								"52",
+								"188",
+								"72",
+								"26"
+							],
+							"path": [
+								"bff",
+								"v1",
+								"rendimientoCes",
+								"detalleSaldosCes"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 17 Aug 2022 17:26:48 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": {\n        \"statusCode\": 200,\n        \"statusDesc\": \"Peticion procesada exitosamente.\"\n    },\n    \"content\": {\n        \"saldo\": [\n            {\n                \"tipo\": \"Rendimientos\",\n                \"saldo\": 0\n            }\n        ]\n    }\n}"
+				}
+			]
+		}
+	]
+}
