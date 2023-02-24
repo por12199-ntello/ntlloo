@@ -1,0 +1,1662 @@
+{
+	"info": {
+		"_postman_id": "232a481d-9ebc-4acc-b936-531c3f27273f",
+		"name": "BFF-Formulario",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cambioPerfilInversion-200",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "canal",
+						"value": "pr",
+						"type": "text"
+					},
+					{
+						"key": "idrequest",
+						"value": "pr",
+						"type": "text"
+					},
+					{
+						"key": "idusuario",
+						"value": "pr",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "pr",
+						"type": "text"
+					},
+					{
+						"key": "fecha",
+						"value": "pr",
+						"type": "text"
+					},
+					{
+						"key": "ipaddr",
+						"value": "pr",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n              \"nuevoPerfil\":\"INVERSIÓN\",\r\n             \"channelId\":\"ZTE\",\r\n             \"codCuenta\":\"7DulJdZ736vfxNu0PgWYHJw8S48uufzIyGFzDQx2xZAKBTRJIPdRyF55YQlK86NFZDyIlfq9pG+SJpB8XakEgbt9z+XVaslw/TVD2cyY4Z9ax3ZWrdxRGjcsOqXa4X6VzNoZhmqWEEI8cnNaA3r2JMqxG2OaYDlt+pnN/bG92+t1ldqEHlQuc5WqfNYzvgQUkYcSz1GwissMWJGEFlN4L+tiaSa6hW5XAQbZhwerB7A+kz0pRNPbQwl0vjvHCTVn8HtLXwhnDx886jhnzuS/bkRknbpGysCShMZyQipVhGnNv4jlAMCDI8H0UnVq9eyqe/HBQzxwR8AnoVzt6WFvaA==\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://52.188.72.26/bff/v1/formularioCambioPerfil/cambioPerfilInversion",
+					"protocol": "http",
+					"host": [
+						"52",
+						"188",
+						"72",
+						"26"
+					],
+					"path": [
+						"bff",
+						"v1",
+						"formularioCambioPerfil",
+						"cambioPerfilInversion"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "300-error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "canal",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "idrequest",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "idusuario",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "fecha",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "ipaddr",
+								"value": "pr",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n              \"nuevoPerfil\":\"Ixxx\",\r\n             \"channelId\":\"ZTE\",\r\n             \"codCuenta\":\"7DulJdZ736vfxNu0PgWYHJw8S48uufzIyGFzDQx2xZAKBTRJIPdRyF55YQlK86NFZDyIlfq9pG+SJpB8XakEgbt9z+XVaslw/TVD2cyY4Z9ax3ZWrdxRGjcsOqXa4X6VzNoZhmqWEEI8cnNaA3r2JMqxG2OaYDlt+pnN/bG92+t1ldqEHlQuc5WqfNYzvgQUkYcSz1GwissMWJGEFlN4L+tiaSa6hW5XAQbZhwerB7A+kz0pRNPbQwl0vjvHCTVn8HtLXwhnDx886jhnzuS/bkRknbpGysCShMZyQipVhGnNv4jlAMCDI8H0UnVq9eyqe/HBQzxwR8AnoVzt6WFvaA==\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://52.188.72.26/bff/v1/formularioCambioPerfil/cambioPerfilInversion",
+							"protocol": "http",
+							"host": [
+								"52",
+								"188",
+								"72",
+								"26"
+							],
+							"path": [
+								"bff",
+								"v1",
+								"formularioCambioPerfil",
+								"cambioPerfilInversion"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 12 Jan 2023 13:50:45 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": {\n        \"statusCode\": 300,\n        \"statusDesc\": \"Error, no se pudo almacenar registro\",\n        \"traza\": \"java.sql.BatchUpdateException: ORA-02291: integrity constraint (FO.FO_CUENTAS_PERFILES_FK) violated - parent key not found\\n\"\n    },\n    \"content\": null\n}"
+				},
+				{
+					"name": "400-error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "canal",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "idrequest",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "idusuario",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "fecha",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "ipaddr",
+								"value": "pr",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n              \"nuevoPerfil\":\"INVERSIÓN\",\r\n             \"channelId\":\"ZTE\",\r\n             \"codCuenta\":\"45533\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://52.188.72.26/bff/v1/formularioCambioPerfil/cambioPerfilInversion",
+							"protocol": "http",
+							"host": [
+								"52",
+								"188",
+								"72",
+								"26"
+							],
+							"path": [
+								"bff",
+								"v1",
+								"formularioCambioPerfil",
+								"cambioPerfilInversion"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 12 Jan 2023 13:51:37 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"codigo\": \"NEG0004\",\n    \"descripcion\": \"Los parametros de entrada no son validos\",\n    \"descripcionAdicional\": null,\n    \"httpStatus\": \"BAD_REQUEST\"\n}"
+				},
+				{
+					"name": "406-error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "canal",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "idrequest",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "idusuario",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "fecha",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "ipaddr",
+								"value": "pr",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n              \"nuevoPerfil\":\"INVERSIÓN\",\r\n             \"channelId\":\"sss\",\r\n             \"codCuenta\":\"7DulJdZ736vfxNu0PgWYHJw8S48uufzIyGFzDQx2xZAKBTRJIPdRyF55YQlK86NFZDyIlfq9pG+SJpB8XakEgbt9z+XVaslw/TVD2cyY4Z9ax3ZWrdxRGjcsOqXa4X6VzNoZhmqWEEI8cnNaA3r2JMqxG2OaYDlt+pnN/bG92+t1ldqEHlQuc5WqfNYzvgQUkYcSz1GwissMWJGEFlN4L+tiaSa6hW5XAQbZhwerB7A+kz0pRNPbQwl0vjvHCTVn8HtLXwhnDx886jhnzuS/bkRknbpGysCShMZyQipVhGnNv4jlAMCDI8H0UnVq9eyqe/HBQzxwR8AnoVzt6WFvaA==\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://52.188.72.26/bff/v1/formularioCambioPerfil/cambioPerfilInversion",
+							"protocol": "http",
+							"host": [
+								"52",
+								"188",
+								"72",
+								"26"
+							],
+							"path": [
+								"bff",
+								"v1",
+								"formularioCambioPerfil",
+								"cambioPerfilInversion"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 12 Jan 2023 13:56:45 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": {\n        \"statusCode\": 406,\n        \"statusDesc\": \"Error en los parametros de entrada, los datos no son validos\",\n        \"traza\": null\n    },\n    \"content\": \"chanelId no valido\"\n}"
+				},
+				{
+					"name": "500-error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "canal",
+								"value": "pr",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "idrequest",
+								"value": "pr",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "idusuario",
+								"value": "pr",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "authorization",
+								"value": "pr",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "fecha",
+								"value": "pr",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "ipaddr",
+								"value": "pr",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n              \"Perfil\":\"INVERSIÓN\",\r\n             \"channelId\":\"ZTE\",\r\n             \"codCuenta\":\"7DulJdZ736vfxNu0PgWYHJw8S48uufzIyGFzDQx2xZAKBTRJIPdRyF55YQlK86NFZDyIlfq9pG+SJpB8XakEgbt9z+XVaslw/TVD2cyY4Z9ax3ZWrdxRGjcsOqXa4X6VzNoZhmqWEEI8cnNaA3r2JMqxG2OaYDlt+pnN/bG92+t1ldqEHlQuc5WqfNYzvgQUkYcSz1GwissMWJGEFlN4L+tiaSa6hW5XAQbZhwerB7A+kz0pRNPbQwl0vjvHCTVn8HtLXwhnDx886jhnzuS/bkRknbpGysCShMZyQipVhGnNv4jlAMCDI8H0UnVq9eyqe/HBQzxwR8AnoVzt6WFvaA==\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://52.188.72.26/bff/v1/formularioCambioPerfil/cambioPerfilInversion",
+							"protocol": "http",
+							"host": [
+								"52",
+								"188",
+								"72",
+								"26"
+							],
+							"path": [
+								"bff",
+								"v1",
+								"formularioCambioPerfil",
+								"cambioPerfilInversion"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 12 Jan 2023 14:06:51 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": {\n        \"statusCode\": 500,\n        \"statusDesc\": \"Errores Internos o no controlados:  \",\n        \"traza\": \"java.lang.NullPointerException\\n\\tat com.porvenir.beans.CambioPerfilInversionBean.CambioPerfilInversion(CambioPerfilInversionBean.java:58)\\n\\tat sun.reflect.GeneratedMethodAccessor8389.invoke(Unknown Source)\\n\\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\\n\\tat java.lang.reflect.Method.invoke(Method.java:498)\\n\\tat com.bea.core.repackaged.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)\\n\\tat com.bea.core.repackaged.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)\\n\\tat com.bea.core.repackaged.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)\\n\\tat com.oracle.pitchfork.intercept.MethodInvocationInvocationContext.proceed(MethodInvocationInvocationContext.java:101)\\n\\tat com.oracle.pitchfork.intercept.JeeInterceptorInterceptor.invoke(JeeInterceptorInterceptor.java:101)\\n\\tat com.bea.core.repackaged.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)\\n\\tat com.oracle.pitchfork.intercept.MethodInvocationInvocationContext.proceed(MethodInvocationInvocationContext.java:101)\\n\\tat org.jboss.weld.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:64)\\n\\tat org.jboss.weld.ejb.SessionBeanInterceptor.aroundInvoke(SessionBeanInterceptor.java:52)\\n\\tat sun.reflect.GeneratedMethodAccessor7826.invoke(Unknown Source)\\n\\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\\n\\tat java.lang.reflect.Method.invoke(Method.java:498)\\n\\tat com.oracle.pitchfork.intercept.JeeInterceptorInterceptor.invoke(JeeInterceptorInterceptor.java:94)\\n\\tat com.bea.core.repackaged.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)\\n\\tat com.bea.core.repackaged.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:136)\\n\\tat com.bea.core.repackaged.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:124)\\n\\tat com.bea.core.repackaged.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)\\n\\tat com.bea.core.repackaged.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)\\n\\tat com.sun.proxy.$Proxy3481.CambioPerfilInversion(Unknown Source)\\n\\tat com.porvenir.beans.CambioPerfilInversionBean_ys5ygw_NoIntfViewImpl.__WL_invoke(Unknown Source)\\n\\tat weblogic.ejb.container.internal.SessionLocalMethodInvoker.invoke(SessionLocalMethodInvoker.java:33)\\n\\tat com.porvenir.beans.CambioPerfilInversionBean_ys5ygw_NoIntfViewImpl.CambioPerfilInversion(Unknown Source)\\n\\tat com.porvenir.api.CambioPerfilInversionAPI.Actualizar(CambioPerfilInversionAPI.java:64)\\n\\tat sun.reflect.GeneratedMethodAccessor8388.invoke(Unknown Source)\\n\\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\\n\\tat java.lang.reflect.Method.invoke(Method.java:498)\\n\\tat org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)\\n\\tat org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)\\n\\tat org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)\\n\\tat org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)\\n\\tat org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)\\n\\tat org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)\\n\\tat org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)\\n\\ta\"\n    },\n    \"content\": null\n}"
+				},
+				{
+					"name": "200-OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "canal",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "idrequest",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "idusuario",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "fecha",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "ipaddr",
+								"value": "pr",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n              \"nuevoPerfil\":\"INVERSIÓN\",\r\n             \"channelId\":\"ZTE\",\r\n             \"codCuenta\":\"7DulJdZ736vfxNu0PgWYHJw8S48uufzIyGFzDQx2xZAKBTRJIPdRyF55YQlK86NFZDyIlfq9pG+SJpB8XakEgbt9z+XVaslw/TVD2cyY4Z9ax3ZWrdxRGjcsOqXa4X6VzNoZhmqWEEI8cnNaA3r2JMqxG2OaYDlt+pnN/bG92+t1ldqEHlQuc5WqfNYzvgQUkYcSz1GwissMWJGEFlN4L+tiaSa6hW5XAQbZhwerB7A+kz0pRNPbQwl0vjvHCTVn8HtLXwhnDx886jhnzuS/bkRknbpGysCShMZyQipVhGnNv4jlAMCDI8H0UnVq9eyqe/HBQzxwR8AnoVzt6WFvaA==\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://52.188.72.26/bff/v1/formularioCambioPerfil/cambioPerfilInversion",
+							"protocol": "http",
+							"host": [
+								"52",
+								"188",
+								"72",
+								"26"
+							],
+							"path": [
+								"bff",
+								"v1",
+								"formularioCambioPerfil",
+								"cambioPerfilInversion"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 12 Jan 2023 13:31:21 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": {\n        \"statusCode\": 200,\n        \"statusDesc\": \"Peticion procesada exitosamente.\",\n        \"traza\": null\n    },\n    \"content\": \"cambio de perfil exitoso\"\n}"
+				},
+				{
+					"name": "204-error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "canal",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "idrequest",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "idusuario",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "fecha",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "ipaddr",
+								"value": "pr",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n              \"nuevoPerfil\":\"INVERSIÓN\",\r\n             \"channelId\":\"ZTE\",\r\n             \"codCuenta\":\"7DulJdZ736vfxNu0PgWYHJw8S48uufzIyGFzDQx2xZAKBTRJIPdRyF55YQlK86NFZDyIlfq9pG+SJpB8XakEgbt9z+XVaslw/TVD2cyY4Z9ax3ZWrdxRGjcsOqXa4X6VzNoZhmqWEEI8cnNaA3r2JMqxG2OaYDlt+pnN/bG92+t1ldqEHlQuc5WqfNYzvgQUkYcSz1GwissMWJGEFlN4L+tiaSa6hW5XAQbZhwerB7A+kz0pRNPbQwl0vjvHCTVn8HtLXwhnDx886jhnzuS/bkRknbpGysCShMZyQipVhGnNv4jlAMCDI8H0UnVq9eyqe/HBQzxwR8AnoVzt6WFvaA=\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://52.188.72.26/bff/v1/formularioCambioPerfil/cambioPerfilInversion",
+							"protocol": "http",
+							"host": [
+								"52",
+								"188",
+								"72",
+								"26"
+							],
+							"path": [
+								"bff",
+								"v1",
+								"formularioCambioPerfil",
+								"cambioPerfilInversion"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 12 Jan 2023 14:14:31 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": {\n        \"statusCode\": 204,\n        \"statusDesc\": \"No se encontraron coincidencias para la consulta. No hay registros para la cuenta.\",\n        \"traza\": null\n    },\n    \"content\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "consultarTransaccion-200",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "canal",
+						"value": "pr",
+						"type": "text"
+					},
+					{
+						"key": "idrequest",
+						"value": "pr",
+						"type": "text"
+					},
+					{
+						"key": "idusuario",
+						"value": "pr",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "pr",
+						"type": "text"
+					},
+					{
+						"key": "fecha",
+						"value": "pr",
+						"type": "text"
+					},
+					{
+						"key": "ipaddr",
+						"value": "pr",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"codCuenta\":\"7DulJdZ736vfxNu0PgWYHJw8S48uufzIyGFzDQx2xZAKBTRJIPdRyF55YQlK86NFZDyIlfq9pG+SJpB8XakEgbt9z+XVaslw/TVD2cyY4Z9ax3ZWrdxRGjcsOqXa4X6VzNoZhmqWEEI8cnNaA3r2JMqxG2OaYDlt+pnN/bG92+t1ldqEHlQuc5WqfNYzvgQUkYcSz1GwissMWJGEFlN4L+tiaSa6hW5XAQbZhwerB7A+kz0pRNPbQwl0vjvHCTVn8HtLXwhnDx886jhnzuS/bkRknbpGysCShMZyQipVhGnNv4jlAMCDI8H0UnVq9eyqe/HBQzxwR8AnoVzt6WFvaA==\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://52.188.72.26/bff/v1/formularioCambioPerfil/consultarTransaccionCuenta",
+					"protocol": "http",
+					"host": [
+						"52",
+						"188",
+						"72",
+						"26"
+					],
+					"path": [
+						"bff",
+						"v1",
+						"formularioCambioPerfil",
+						"consultarTransaccionCuenta"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200-OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "canal",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "idrequest",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "idusuario",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "fecha",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "ipaddr",
+								"value": "pr",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"codCuenta\":\"7DulJdZ736vfxNu0PgWYHJw8S48uufzIyGFzDQx2xZAKBTRJIPdRyF55YQlK86NFZDyIlfq9pG+SJpB8XakEgbt9z+XVaslw/TVD2cyY4Z9ax3ZWrdxRGjcsOqXa4X6VzNoZhmqWEEI8cnNaA3r2JMqxG2OaYDlt+pnN/bG92+t1ldqEHlQuc5WqfNYzvgQUkYcSz1GwissMWJGEFlN4L+tiaSa6hW5XAQbZhwerB7A+kz0pRNPbQwl0vjvHCTVn8HtLXwhnDx886jhnzuS/bkRknbpGysCShMZyQipVhGnNv4jlAMCDI8H0UnVq9eyqe/HBQzxwR8AnoVzt6WFvaA==\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://52.188.72.26/bff/v1/formularioCambioPerfil/consultarTransaccionCuenta",
+							"protocol": "http",
+							"host": [
+								"52",
+								"188",
+								"72",
+								"26"
+							],
+							"path": [
+								"bff",
+								"v1",
+								"formularioCambioPerfil",
+								"consultarTransaccionCuenta"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 12 Jan 2023 13:41:33 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": {\n        \"statusCode\": 200,\n        \"statusDesc\": \"Peticion procesada exitosamente.\",\n        \"traza\": null\n    },\n    \"content\": [\n        {\n            \"numSolicitud\": \"49806666\",\n            \"tipo\": \"A\",\n            \"estado\": \"R\",\n            \"fechaSolicitud\": \"2022-11-10\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "400-error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "canal",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "idrequest",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "idusuario",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "fecha",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "ipaddr",
+								"value": "pr",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"codCuenta\":\"8897\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://52.188.72.26/bff/v1/formularioCambioPerfil/consultarTransaccionCuenta",
+							"protocol": "http",
+							"host": [
+								"52",
+								"188",
+								"72",
+								"26"
+							],
+							"path": [
+								"bff",
+								"v1",
+								"formularioCambioPerfil",
+								"consultarTransaccionCuenta"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 12 Jan 2023 13:42:06 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"codigo\": \"NEG0004\",\n    \"descripcion\": \"Los parametros de entrada no son validos\",\n    \"descripcionAdicional\": null,\n    \"httpStatus\": \"BAD_REQUEST\"\n}"
+				},
+				{
+					"name": "406-error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "canal",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "idrequest",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "idusuario",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "fecha",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "ipaddr",
+								"value": "pr",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"codCuenta\":\"7DulJdZ736vfxNu0PgWYHJw8S48uufzIyGFzDQx2xZAKBTRJIPdRyF55YQlK86NFZDyIlfq9pG+SJpB8XakEgbt9z+XVaslw/TVD2cyY4Z9ax3XWrdxRGjcsOqXa4X6VzNoZhmqWEEI8cnNaA3r2JMqxG2OaYDlt+pnN/bG92+t1ldqEHlQuc5WqfNYzvgQUkYcSz1GwissMWJGEFlN4L+tiaSa6hW5XAQbZhwerB7A+kz0pRNPbQwl0vjvHCTVn8HtLXwhnDx886jhnzuS/bkRknbpGysCShMZyQipVhGnNv4jlAMCDI8H0UnVq9eyqe/HBQzxwR8AnoVzt6WFvaA==\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://52.188.72.26/bff/v1/formularioCambioPerfil/consultarTransaccionCuenta",
+							"protocol": "http",
+							"host": [
+								"52",
+								"188",
+								"72",
+								"26"
+							],
+							"path": [
+								"bff",
+								"v1",
+								"formularioCambioPerfil",
+								"consultarTransaccionCuenta"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 12 Jan 2023 14:01:41 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": {\n        \"statusCode\": 406,\n        \"statusDesc\": \"Error en los parametros de entrada, los datos no son validos\",\n        \"traza\": null\n    },\n    \"content\": null\n}"
+				},
+				{
+					"name": "500-error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "canal",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "idrequest",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "idusuario",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "fecha",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "ipaddr",
+								"value": "pr",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"cod\":\"7DulJdZ736vfxNu0PgWYHJw8S48uufzIyGFzDQx2xZAKBTRJIPdRyF55YQlK86NFZDyIlfq9pG+SJpB8XakEgbt9z+XVaslw/TVD2cyY4Z9ax3ZWrdxRGjcsOqXa4X6VzNoZhmqWEEI8cnNaA3r2JMqxG2OaYDlt+pnN/bG92+t1ldqEHlQuc5WqfNYzvgQUkYcSz1GwissMWJGEFlN4L+tiaSa6hW5XAQbZhwerB7A+kz0pRNPbQwl0vjvHCTVn8HtLXwhnDx886jhnzuS/bkRknbpGysCShMZyQipVhGnNv4jlAMCDI8H0UnVq9eyqe/HBQzxwR8AnoVzt6WFvaA==\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://52.188.72.26/bff/v1/formularioCambioPerfil/consultarTransaccionCuenta",
+							"protocol": "http",
+							"host": [
+								"52",
+								"188",
+								"72",
+								"26"
+							],
+							"path": [
+								"bff",
+								"v1",
+								"formularioCambioPerfil",
+								"consultarTransaccionCuenta"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 12 Jan 2023 13:59:53 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timestamp\": \"2023-01-12T13:59:53.214+00:00\",\n    \"status\": 500,\n    \"error\": \"Internal Server Error\",\n    \"message\": \"\",\n    \"path\": \"/bff/v1/formularioCambioPerfil/consultarTransaccionCuenta\"\n}"
+				},
+				{
+					"name": "204-error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "canal",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "idrequest",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "idusuario",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "fecha",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "ipaddr",
+								"value": "pr",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"codCuenta\":\"3NjeALMvtujCUFPPMBNXSU4FsODiP4kVWTbe88IKbrMPRzv72vQ5oKJ2par+FVj3g6xyeLNvmzUMscUO2I3//9bwUHq0wQCmNH9lI8fhIHdaKa7Zlgb8AAtjOhz2kGLRL3Ucv4E6vynMrbrmdCeHvxpHIeciUxTdLw17jU+7OEfh701tbYc/nMJCrdC5DaLi9EeZfuCN9vCOYOQbdswqYvlKVLPJ4l0XXLMA9VcJKEwWlgNFgRxRFq23AW6zaMZMTFsZL8Xz4rJUDVDAWttbxarKJwQz1GXW+xcSk7Pi6UnnzKSQqI/B45IJcIaX6Dhc32/BOk8xA2xG3wdWufWPew==\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://52.188.72.26/bff/v1/formularioCambioPerfil/consultarTransaccionCuenta",
+							"protocol": "http",
+							"host": [
+								"52",
+								"188",
+								"72",
+								"26"
+							],
+							"path": [
+								"bff",
+								"v1",
+								"formularioCambioPerfil",
+								"consultarTransaccionCuenta"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 12 Jan 2023 14:24:51 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": {\n        \"statusCode\": 204,\n        \"statusDesc\": \"No se encontraron coincidencias para la consulta. No hay Transacciones.\",\n        \"traza\": null\n    },\n    \"content\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "calcularNuevoPerfil-200",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "canal",
+						"value": "pr",
+						"type": "text"
+					},
+					{
+						"key": "idrequest",
+						"value": "pr",
+						"type": "text"
+					},
+					{
+						"key": "idusuario",
+						"value": "pr",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "pr",
+						"type": "text"
+					},
+					{
+						"key": "fecha",
+						"value": "pr",
+						"type": "text"
+					},
+					{
+						"key": "ipaddr",
+						"value": "pr",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"listaRespuestas\": [\r\n    {\r\n        \"idPregunta\" : 0,\r\n        \"opcionPregunta\" : [2]\r\n        },\r\n    {\r\n        \"idPregunta\" : 1,\r\n        \"opcionPregunta\" : [2,1]\r\n        },\r\n    {\r\n        \"idPregunta\" : 2,\r\n        \"opcionPregunta\" :[2]\r\n        },\r\n    {\r\n        \"idPregunta\" : 3,\r\n        \"opcionPregunta\" : [2,1,5]\r\n        },\r\n    {\r\n        \"idPregunta\" : 4,\r\n        \"opcionPregunta\" : [2]\r\n        },\r\n    {\r\n        \"idPregunta\" : 5,\r\n        \"opcionPregunta\" :[2,1]\r\n        },\r\n        {\r\n        \"idPregunta\" : 6,\r\n        \"opcionPregunta\" :[2]\r\n        }\r\n\r\n]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://52.188.72.26/bff/v1/formularioCambioPerfil/calcular",
+					"protocol": "http",
+					"host": [
+						"52",
+						"188",
+						"72",
+						"26"
+					],
+					"path": [
+						"bff",
+						"v1",
+						"formularioCambioPerfil",
+						"calcular"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200-OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "canal",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "idrequest",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "idusuario",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "fecha",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "ipaddr",
+								"value": "pr",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"listaRespuestas\": [\r\n    {\r\n        \"idPregunta\" : 0,\r\n        \"opcionPregunta\" : [2]\r\n        },\r\n    {\r\n        \"idPregunta\" : 1,\r\n        \"opcionPregunta\" : [2,1]\r\n        },\r\n    {\r\n        \"idPregunta\" : 2,\r\n        \"opcionPregunta\" :[2]\r\n        },\r\n    {\r\n        \"idPregunta\" : 3,\r\n        \"opcionPregunta\" : [2,1,5]\r\n        },\r\n    {\r\n        \"idPregunta\" : 4,\r\n        \"opcionPregunta\" : [2]\r\n        },\r\n    {\r\n        \"idPregunta\" : 5,\r\n        \"opcionPregunta\" :[2,1]\r\n        },\r\n        {\r\n        \"idPregunta\" : 6,\r\n        \"opcionPregunta\" :[2]\r\n        }\r\n\r\n]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://52.188.72.26/bff/v1/formularioCambioPerfil/calcular",
+							"protocol": "http",
+							"host": [
+								"52",
+								"188",
+								"72",
+								"26"
+							],
+							"path": [
+								"bff",
+								"v1",
+								"formularioCambioPerfil",
+								"calcular"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 12 Jan 2023 13:42:52 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": {\n        \"statusCode\": 200,\n        \"statusDesc\": \"proceso finalizado con exito\",\n        \"traza\": null\n    },\n    \"content\": [\n        {\n            \"perfilNuevo\": \"INVERSIÓN\",\n            \"formularioRespuestas\": [\n                {\n                    \"codPregunta\": 0,\n                    \"descPregunta\": \"¿Cuál es la finalidad de su ahorro - inversión?\",\n                    \"opcionesRespuesta\": [\n                        {\n                            \"opcionPregunta\": 2,\n                            \"descripcion\": \"Educación\"\n                        }\n                    ]\n                },\n                {\n                    \"codPregunta\": 1,\n                    \"descPregunta\": \"¿En cuánto tiempo planea disponer de los recursos ahorrados/invertidos?\",\n                    \"opcionesRespuesta\": [\n                        {\n                            \"opcionPregunta\": 1,\n                            \"descripcion\": \"De 0 a 6 meses \"\n                        },\n                        {\n                            \"opcionPregunta\": 2,\n                            \"descripcion\": \"De 6 meses a 3 años \"\n                        }\n                    ]\n                },\n                {\n                    \"codPregunta\": 2,\n                    \"descPregunta\": \"¿Tiene experiencia en inversiones?\",\n                    \"opcionesRespuesta\": [\n                        {\n                            \"opcionPregunta\": 2,\n                            \"descripcion\": \"Media: He realizado inversiones en activos de Renta Fija\"\n                        }\n                    ]\n                },\n                {\n                    \"codPregunta\": 3,\n                    \"descPregunta\": \"Seleccione todos los productos en los que desea hacer su inversión\",\n                    \"opcionesRespuesta\": [\n                        {\n                            \"opcionPregunta\": 1,\n                            \"descripcion\": \"Cuenta de ahorros y/o corriente - Certificados de deposito a término (CDT) menores a 6 meses\"\n                        },\n                        {\n                            \"opcionPregunta\": 2,\n                            \"descripcion\": \"Instrumentos de Renta Fija (RF) mayores a 6 meses\"\n                        },\n                        {\n                            \"opcionPregunta\": 5,\n                            \"descripcion\": \"Derivados y/o Notas Estructuradas\"\n                        }\n                    ]\n                },\n                {\n                    \"codPregunta\": 4,\n                    \"descPregunta\": \"Buscando alcanzar sus objetivos de inversión ¿Estaría dispuesto a aceptar desvalorizaciones ?\",\n                    \"opcionesRespuesta\": [\n                        {\n                            \"opcionPregunta\": 2,\n                            \"descripcion\": \"NO\"\n                        }\n                    ]\n                },\n                {\n                    \"codPregunta\": 5,\n                    \"descPregunta\": \"¿Qué porcentaje de sus ingresos está dispuesto a destinar a portafolios clasificados como de inversión? Descritos en el presente documento\",\n                    \"opcionesRespuesta\": [\n                        {\n                            \"opcionPregunta\": 1,\n                            \"descripcion\": \"Menos del 5%\"\n                        },\n                        {\n                            \"opcionPregunta\": 2,\n                            \"descripcion\": \"Entre el 5% y el 10%\"\n                        }\n                    ]\n                }\n            ]\n        }\n    ]\n}"
+				},
+				{
+					"name": "400-error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "canal",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "idrequest",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "idusuario",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "fecha",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "ipaddr",
+								"value": "pr",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"listaRespuesta\": [\r\n    {\r\n        \"idPregunta\" : 0,\r\n        \"opcionPregunta\" : [2\r\n        },\r\n    {\r\n        \"idPregunta\" : 1,\r\n        \"opcionPregunta\" : [2,1]\r\n        },\r\n    {\r\n        \"idPregunta\" : 2,\r\n        \"opcionPregunta\" :[2]\r\n        },\r\n    {\r\n        \"idPregunta\" : 3,\r\n        \"opcionPregunta\" : [2,1,5]\r\n        },\r\n    {\r\n        \"idPregunta\" : 4,\r\n        \"opcionPregunta\" : [2]\r\n        },\r\n    {\r\n        \"idPregunta\" : 5,\r\n        \"opcionPregunta\" :[2,1]\r\n        },\r\n        {\r\n        \"idPregunta\" : 6,\r\n        \"opcionPregunta\" :[2]\r\n        }\r\n\r\n]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://52.188.72.26/bff/v1/formularioCambioPerfil/calcular",
+							"protocol": "http",
+							"host": [
+								"52",
+								"188",
+								"72",
+								"26"
+							],
+							"path": [
+								"bff",
+								"v1",
+								"formularioCambioPerfil",
+								"calcular"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 12 Jan 2023 13:44:56 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timestamp\": \"2023-01-12T13:44:56.206+00:00\",\n    \"status\": 400,\n    \"error\": \"Bad Request\",\n    \"message\": \"\",\n    \"path\": \"/bff/v1/formularioCambioPerfil/calcular\"\n}"
+				},
+				{
+					"name": "500-error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "canal",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "idrequest",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "idusuario",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "fecha",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "ipaddr",
+								"value": "pr",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"lista\": [\r\n    {\r\n        \"idPregunta\" : 0,\r\n        \"opcionPregunta\" : [2]\r\n        },\r\n    {\r\n        \"idPregunta\" : 1,\r\n        \"opcionPregunta\" : [2,1]\r\n        },\r\n    {\r\n        \"idPregunta\" : 2,\r\n        \"opcionPregunta\" :[2]\r\n        },\r\n    {\r\n        \"idPregunta\" : 3,\r\n        \"opcionPregunta\" : [2,1,5]\r\n        },\r\n    {\r\n        \"idPregunta\" : 4,\r\n        \"opcionPregunta\" : [2]\r\n        },\r\n    {\r\n        \"idPregunta\" : 5,\r\n        \"opcionPregunta\" :[2,1]\r\n        },\r\n        {\r\n        \"idPregunta\" : 6,\r\n        \"opcionPregunta\" :[2]\r\n        }\r\n\r\n]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://52.188.72.26/bff/v1/formularioCambioPerfil/calcular",
+							"protocol": "http",
+							"host": [
+								"52",
+								"188",
+								"72",
+								"26"
+							],
+							"path": [
+								"bff",
+								"v1",
+								"formularioCambioPerfil",
+								"calcular"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 12 Jan 2023 13:46:10 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"codigo\": \"TEC0006\",\n    \"descripcion\": \"Error interno del sistema\",\n    \"descripcionAdicional\": [\n        {\n            \"detalle\": \"Error: com.porvenir.bff.formularioCambioPerfil.errores.InternalException: Error obtenerFormulario. java.lang.NullPointerException\\n\\tat com.porvenir.bff.formularioCambioPerfil.utils.FormularioUtils.calcularPerfil(FormularioUtils.java:47)\\n\\tat com.porvenir.bff.formularioCambioPerfil.service.impl.FormularioCambioPerfilServiceImpl.formularioMain(FormularioCambioPerfilServiceImpl.java:92)\\n\\tat com.porvenir.bff.formularioCambioPerfil.controller.FormularioCambioPerfilController.calcular(FormularioCambioPerfilController.java:96)\\n\\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\\n\\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\\n\\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\\n\\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)\\n\\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)\\n\\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)\\n\\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)\\n\\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)\\n\\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)\\n\\tat org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)\\n\\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:652)\\n\\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)\\n\\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:733)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\n\\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\n\\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\n\\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\n\\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\n\\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)\\n\\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)\\n\\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)\\n\\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)\\n\\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)\\n\\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)\\n\\tat org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:764)\\n\\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)\\n\\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)\\n\\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)\\n\\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)\\n\\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)\\n\\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)\\n\\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\\n\\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\\n\\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)\\n\\tat java.base/java.lang.Thread.run(Thread.java:829)\\n\"\n        }\n    ],\n    \"httpStatus\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "generar-200",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "canal",
+						"value": "pr",
+						"type": "text"
+					},
+					{
+						"key": "idrequest",
+						"value": "pr",
+						"type": "text"
+					},
+					{
+						"key": "idusuario",
+						"value": "pr",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "pr",
+						"type": "text"
+					},
+					{
+						"key": "fecha",
+						"value": "pr",
+						"type": "text"
+					},
+					{
+						"key": "ipaddr",
+						"value": "pr",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "",
+						"variables": ""
+					},
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://52.188.72.26/bff/v1/formularioCambioPerfil/generar",
+					"protocol": "http",
+					"host": [
+						"52",
+						"188",
+						"72",
+						"26"
+					],
+					"path": [
+						"bff",
+						"v1",
+						"formularioCambioPerfil",
+						"generar"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "400-error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "canal",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "idrequest",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "idusuario",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "pr",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "fecha",
+								"value": "pr",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "ipaddr",
+								"value": "pr",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "",
+								"variables": ""
+							},
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://52.188.72.26/bff/v1/formularioCambioPerfil/generar",
+							"protocol": "http",
+							"host": [
+								"52",
+								"188",
+								"72",
+								"26"
+							],
+							"path": [
+								"bff",
+								"v1",
+								"formularioCambioPerfil",
+								"generar"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 12 Jan 2023 14:11:14 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timestamp\": \"2023-01-12T14:11:14.124+00:00\",\n    \"status\": 400,\n    \"error\": \"Bad Request\",\n    \"message\": \"\",\n    \"path\": \"/bff/v1/formularioCambioPerfil/generar\"\n}"
+				},
+				{
+					"name": "200-OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "canal",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "idrequest",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "idusuario",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "fecha",
+								"value": "pr",
+								"type": "text"
+							},
+							{
+								"key": "ipaddr",
+								"value": "pr",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "",
+								"variables": ""
+							},
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://52.188.72.26/bff/v1/formularioCambioPerfil/generar",
+							"protocol": "http",
+							"host": [
+								"52",
+								"188",
+								"72",
+								"26"
+							],
+							"path": [
+								"bff",
+								"v1",
+								"formularioCambioPerfil",
+								"generar"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 12 Jan 2023 13:43:16 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": {\n        \"statusCode\": 200,\n        \"statusDesc\": \"proceso finalizado con exito\",\n        \"traza\": null\n    },\n    \"content\": [\n        {\n            \"codPregunta\": 0,\n            \"descPregunta\": \"¿Cuál es la finalidad de su ahorro - inversión?\",\n            \"opcionesRespuesta\": [\n                {\n                    \"opcionPregunta\": 1,\n                    \"descripcion\": \"Ahorro para fines de corto plazo\"\n                },\n                {\n                    \"opcionPregunta\": 2,\n                    \"descripcion\": \"Educación\"\n                },\n                {\n                    \"opcionPregunta\": 3,\n                    \"descripcion\": \"Compra de vivienda\"\n                },\n                {\n                    \"opcionPregunta\": 4,\n                    \"descripcion\": \"Complemento de pensión\"\n                },\n                {\n                    \"opcionPregunta\": 5,\n                    \"descripcion\": \"Aprovechar oportunidades de mercado\"\n                }\n            ]\n        },\n        {\n            \"codPregunta\": 1,\n            \"descPregunta\": \"¿En cuánto tiempo planea disponer de los recursos ahorrados/invertidos?\",\n            \"opcionesRespuesta\": [\n                {\n                    \"opcionPregunta\": 1,\n                    \"descripcion\": \"De 0 a 6 meses \"\n                },\n                {\n                    \"opcionPregunta\": 2,\n                    \"descripcion\": \"De 6 meses a 3 años \"\n                },\n                {\n                    \"opcionPregunta\": 3,\n                    \"descripcion\": \"Más de 3 años\"\n                }\n            ]\n        },\n        {\n            \"codPregunta\": 2,\n            \"descPregunta\": \"¿Tiene experiencia en inversiones?\",\n            \"opcionesRespuesta\": [\n                {\n                    \"opcionPregunta\": 1,\n                    \"descripcion\": \"Baja: He realizado inversiones en productos financieros básicos (cuentas de ahorro o CDT)\"\n                },\n                {\n                    \"opcionPregunta\": 2,\n                    \"descripcion\": \"Media: He realizado inversiones en activos de Renta Fija\"\n                },\n                {\n                    \"opcionPregunta\": 3,\n                    \"descripcion\": \"Alta:  He realizado inversiones en activos de Renta Variable, Divisas, Derivados, entre otros\"\n                }\n            ]\n        },\n        {\n            \"codPregunta\": 3,\n            \"descPregunta\": \"Seleccione todos los productos en los que desea hacer su inversión\",\n            \"opcionesRespuesta\": [\n                {\n                    \"opcionPregunta\": 1,\n                    \"descripcion\": \"Cuenta de ahorros y/o corriente - Certificados de deposito a término (CDT) menores a 6 meses\"\n                },\n                {\n                    \"opcionPregunta\": 2,\n                    \"descripcion\": \"Instrumentos de Renta Fija (RF) mayores a 6 meses\"\n                },\n                {\n                    \"opcionPregunta\": 3,\n                    \"descripcion\": \"Acciones y/o bonos\"\n                },\n                {\n                    \"opcionPregunta\": 4,\n                    \"descripcion\": \"Divisas y/o Commodities\"\n                },\n                {\n                    \"opcionPregunta\": 5,\n                    \"descripcion\": \"Derivados y/o Notas Estructuradas\"\n                },\n                {\n                    \"opcionPregunta\": 6,\n                    \"descripcion\": \"Activos alternativos (Fondos Inmobiliarios / Fondos de Capital Privado) Otros\"\n                }\n            ]\n        },\n        {\n            \"codPregunta\": 4,\n            \"descPregunta\": \"Buscando alcanzar sus objetivos de inversión ¿Estaría dispuesto a aceptar desvalorizaciones ?\",\n            \"opcionesRespuesta\": [\n                {\n                    \"opcionPregunta\": 1,\n                    \"descripcion\": \"SI\"\n                },\n                {\n                    \"opcionPregunta\": 2,\n                    \"descripcion\": \"NO\"\n                }\n            ]\n        },\n        {\n            \"codPregunta\": 5,\n            \"descPregunta\": \"¿Qué porcentaje de sus ingresos está dispuesto a destinar a portafolios clasificados como de inversión? Descritos en el presente documento\",\n            \"opcionesRespuesta\": [\n                {\n                    \"opcionPregunta\": 1,\n                    \"descripcion\": \"Menos del 5%\"\n                },\n                {\n                    \"opcionPregunta\": 2,\n                    \"descripcion\": \"Entre el 5% y el 10%\"\n                },\n                {\n                    \"opcionPregunta\": 3,\n                    \"descripcion\": \"Entre el 10% y el 20%\"\n                },\n                {\n                    \"opcionPregunta\": 4,\n                    \"descripcion\": \"Entre el 20% y el 40%\"\n                },\n                {\n                    \"opcionPregunta\": 5,\n                    \"descripcion\": \"Más del 40%\"\n                }\n            ]\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
